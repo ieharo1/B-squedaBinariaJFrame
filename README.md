@@ -1,29 +1,42 @@
-# B-squedaBinariaJFrame
+# 🔍 BúsquFrame
 
-Proyecto Java para implementar búsqueda binaria con interfaz gráfica.
+Proyecto Javaeda Binaria J para implementar búsqueda binaria con interfaz gráfica desarrollado por **Isaac Esteban Haro Torres**.
 
-## Descripción
+---
+
+## 📝 Descripción
 
 Aplicación Java que implementa el algoritmo de búsqueda binaria utilizando JFrame para la interfaz gráfica.
 
-## Características
+---
+
+## ✨ Características
 
 - Algoritmo de búsqueda binaria
 - Interfaz gráfica con JFrame
 - Visualización del proceso de búsqueda
 
-## Stack Tecnológico
+---
+
+## 🛠️ Stack Tecnológico
 
 - Java SE
 - Swing (JFrame)
 - Algoritmos
 
-## Autor
+---
 
-🧑‍💻 **Isaac Haro**
+## 👨‍💻 Desarrollado por Isaac Esteban Haro Torres
 
-Ingeniero en Sistemas · Full Stack · Automatización · Data
+**Ingeniero en Sistemas · Full Stack · Automatización · Data**
 
-## Licencia
+- 📧 Email: zackharo1@gmail.com
+- 📱 WhatsApp: 098805517
+- 💻 GitHub: https://github.com/ieharo1
+- 🌐 Portafolio: https://ieharo1.github.io/portafolio-isaac.haro/
 
-MIT — contribuciones bienvenidas 🚀
+---
+
+## 📄 Licencia
+
+© 2026 Isaac Esteban Haro Torres - Todos los derechos reservados.
