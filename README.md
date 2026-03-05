@@ -1,35 +1,72 @@
-﻿# B-squedaBinariaJFrame - Java API + PostgreSQL + Nginx
+﻿# Backend Java Containerizado con PostgreSQL y Reverse Proxy
 
-Infra orientada a backend Java en contenedores con base de datos y reverse proxy.
+Diseño de servidor para exponer lógica Java como servicio HTTP con persistencia relacional y entrada por Nginx.
 
-## Arquitectura
+## Descripción
 
-- `java-api`: servicio Java compilado en imagen propia.
-- `postgres`: base relacional lista para persistencia.
-- `java-nginx`: entrada publica y reverse proxy.
+Este entorno transforma una base Java tradicional en una arquitectura backend moderna para despliegue Linux.
 
-## Levantar
+## ¿Qué hace este proyecto?
+
+- Compila y ejecuta servicio Java dentro de contenedor.
+- Integra PostgreSQL para datos de negocio.
+- Expone rutas mediante Nginx reverse proxy.
+- Establece base para migración de app de escritorio a API.
+
+## Características Principales
+
+| Característica | Descripción |
+|---|---|
+| Servicio Java | API mínima con endpoints de salud y lógica |
+| Base relacional | PostgreSQL listo para persistencia |
+| Reverse proxy | Nginx como entrada única |
+| Arquitectura modular | Capa web, app y datos separadas |
+
+## Stack Tecnológico
+
+- Java 21
+- PostgreSQL 16
+- Nginx
+- Docker Compose
+
+## Instalación y Uso
+
+### Levantar entorno
 
 ```bash
 docker compose up -d --build
 ```
 
-Probar:
+### Probar
 
 - `http://localhost:8085/health`
 - `http://localhost:8085/binary-search`
 
-## Variables
+## Variables de Entorno
 
 - `NGINX_PORT`
 - `POSTGRES_DB`
 - `POSTGRES_USER`
 - `POSTGRES_PASSWORD`
 
-## Valor para perfil
+## Estructura del Proyecto
 
-- Muestra stack Java + DB + edge proxy.
-- Base para migrar app Swing a API server-side.
+```text
+.
+├── Dockerfile
+├── docker-compose.yml
+├── .env
+├── src/
+│   └── Main.java
+└── nginx/
+    └── default.conf
+```
+
+## Casos de Uso
+
+- APIs Java en infraestructura moderna.
+- Migración de lógica desktop hacia backend.
+- Laboratorio de despliegue Java + DB + Proxy.
 
 ---
 
